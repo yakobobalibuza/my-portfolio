@@ -1,0 +1,1953 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="The professional portfolio of Balibuza Jacob, a changemaker, social entrepreneur, graphic designer, community engagement practitioner, and climate advocate.">
+
+    <meta name="author" content="Balibuza Jacob">
+
+    <title>Balibuza Jacob | Personal Portfolio</title>
+
+    <!-- Professional fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* =========================
+           1. GLOBAL STYLES
+        ========================== */
+
+        :root {
+            --navy: #10243a;
+            --blue: #1769aa;
+            --teal: #11a89a;
+            --light: #f4f8fc;
+            --white: #ffffff;
+            --text: #344256;
+            --muted: #718096;
+            --border: #e3eaf2;
+            --shadow: 0 12px 35px rgba(16, 36, 58, 0.08);
+            --radius: 18px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 85px;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            background: var(--white);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: "Manrope", sans-serif;
+            color: var(--navy);
+            line-height: 1.25;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1120px, 90%);
+            margin: auto;
+        }
+
+        .section {
+            padding: 90px 0;
+        }
+
+        .section:nth-of-type(even) {
+            background: var(--light);
+        }
+
+        .section-heading {
+            margin-bottom: 40px;
+            max-width: 700px;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            color: var(--teal);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.78rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(1.9rem, 4vw, 2.7rem);
+            margin-bottom: 14px;
+        }
+
+        .section-heading p {
+            color: var(--muted);
+        }
+
+        .accent {
+            color: var(--teal);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 13px 22px;
+            border-radius: 9px;
+            font-weight: 700;
+            transition: 0.25s ease;
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            color: var(--white);
+            background: var(--teal);
+        }
+
+        .btn-primary:hover {
+            background: #0b8b80;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            color: var(--white);
+            border-color: rgba(255, 255, 255, 0.45);
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--navy);
+        }
+
+        /* =========================
+           2. NAVIGATION
+        ========================== */
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-inner {
+            min-height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            font-family: "Manrope", sans-serif;
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--navy);
+            white-space: nowrap;
+        }
+
+        .logo span {
+            color: var(--teal);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 23px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.88rem;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--teal);
+        }
+
+        .nav-contact {
+            background: var(--navy);
+            color: var(--white) !important;
+            padding: 10px 16px;
+            border-radius: 8px;
+        }
+
+        .menu-toggle {
+            display: none;
+            border: none;
+            background: transparent;
+            color: var(--navy);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        /* =========================
+           3. HERO / INTRODUCTION
+        ========================== */
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 85% 20%, rgba(17,168,154,.18), transparent 28%),
+                linear-gradient(130deg, #10243a 0%, #163b5b 65%, #1769aa 100%);
+            color: var(--white);
+            padding: 90px 0;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.25fr 0.75fr;
+            align-items: center;
+            gap: 65px;
+        }
+
+        .hero .eyebrow {
+            color: #67e1d1;
+        }
+
+        .hero h1 {
+            color: var(--white);
+            font-size: clamp(2.7rem, 6vw, 4.6rem);
+            letter-spacing: -2px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 span {
+            color: #67e1d1;
+        }
+
+        .hero h2 {
+            color: #d7e7f6;
+            font-size: clamp(1rem, 2vw, 1.35rem);
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            color: #d0ddeb;
+            max-width: 640px;
+            margin-bottom: 30px;
+            font-size: 1.03rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 13px;
+            margin-bottom: 30px;
+        }
+
+        .hero-location {
+            color: #d0ddeb;
+            font-size: 0.9rem;
+        }
+
+        .hero-location i {
+            color: #67e1d1;
+            margin-right: 7px;
+        }
+
+        .hero-photo-wrap {
+            position: relative;
+            max-width: 370px;
+            margin: auto;
+        }
+
+        .hero-photo-frame {
+            padding: 10px;
+            border: 1px solid rgba(255,255,255,.3);
+            background: rgba(255,255,255,.09);
+            border-radius: 30px;
+            transform: rotate(2deg);
+        }
+
+        .hero-photo {
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+            object-position: center 25%;
+            border-radius: 23px;
+            background: #eaf0f5;
+        }
+
+        .photo-label {
+            position: absolute;
+            bottom: 22px;
+            left: -25px;
+            background: var(--white);
+            color: var(--navy);
+            padding: 14px 18px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transform: rotate(-2deg);
+        }
+
+        .photo-label strong {
+            display: block;
+            font-size: 0.9rem;
+        }
+
+        .photo-label small {
+            color: var(--muted);
+        }
+
+        /* =========================
+           4. QUICK PROFILE STRIP
+        ========================== */
+
+        .profile-strip {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .strip-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .strip-item {
+            padding: 26px 15px;
+            text-align: center;
+            border-right: 1px solid var(--border);
+        }
+
+        .strip-item:last-child {
+            border-right: none;
+        }
+
+        .strip-item i {
+            color: var(--teal);
+            font-size: 1.25rem;
+            margin-bottom: 7px;
+        }
+
+        .strip-item strong {
+            display: block;
+            font-family: "Manrope", sans-serif;
+            color: var(--navy);
+            font-size: 0.95rem;
+        }
+
+        .strip-item span {
+            color: var(--muted);
+            font-size: 0.8rem;
+        }
+
+        /* =========================
+           5. ABOUT ME
+        ========================== */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 35px;
+            align-items: start;
+        }
+
+        .about-text p {
+            margin-bottom: 17px;
+        }
+
+        .info-card {
+            background: var(--white);
+            padding: 27px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .info-card h3 {
+            margin-bottom: 18px;
+            font-size: 1.15rem;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.91rem;
+            overflow-wrap: anywhere;
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+
+        .info-list strong {
+            display: block;
+            color: var(--navy);
+            margin-bottom: 3px;
+        }
+
+        /* =========================
+           6. MISSION & VISION
+        ========================== */
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .mission-card {
+            padding: 32px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .mission-card i {
+            display: inline-grid;
+            place-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 14px;
+            background: #e1f7f3;
+            color: var(--teal);
+            font-size: 1.3rem;
+            margin-bottom: 18px;
+        }
+
+        .mission-card h3 {
+            margin-bottom: 12px;
+        }
+
+        .mission-card p {
+            color: var(--muted);
+        }
+
+        .motto {
+            margin-top: 25px;
+            padding: 24px;
+            border-left: 4px solid var(--teal);
+            background: #eaf8f6;
+            color: var(--navy);
+            border-radius: 0 12px 12px 0;
+            font-family: "Manrope", sans-serif;
+            font-weight: 800;
+            font-size: 1.2rem;
+        }
+
+        /* =========================
+           7. SKILLS
+        ========================== */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .skill-card {
+            padding: 27px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            transition: transform .25s, box-shadow .25s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .skill-icon {
+            width: 48px;
+            height: 48px;
+            display: grid;
+            place-items: center;
+            background: #eaf2fc;
+            color: var(--blue);
+            border-radius: 13px;
+            font-size: 1.25rem;
+            margin-bottom: 17px;
+        }
+
+        .skill-card h3 {
+            font-size: 1.08rem;
+            margin-bottom: 12px;
+        }
+
+        .skill-card ul {
+            padding-left: 19px;
+            color: var(--muted);
+            font-size: 0.91rem;
+        }
+
+        .skill-card li {
+            margin-bottom: 7px;
+        }
+
+        /* =========================
+           8. EXPERIENCE
+        ========================== */
+
+        .timeline {
+            max-width: 850px;
+            margin: auto;
+            border-left: 2px solid #d8e7f1;
+            padding-left: 30px;
+        }
+
+        .timeline-item {
+            position: relative;
+            background: var(--white);
+            padding: 25px;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            margin-bottom: 23px;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            background: var(--teal);
+            border: 4px solid #d9f5f0;
+            border-radius: 50%;
+            left: -40px;
+            top: 28px;
+        }
+
+        .timeline-item h3 {
+            font-size: 1.08rem;
+            margin-bottom: 5px;
+        }
+
+        .timeline-org {
+            color: var(--blue);
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .timeline-item p {
+            color: var(--muted);
+            font-size: 0.94rem;
+        }
+
+        /* =========================
+           9. PROJECTS
+        ========================== */
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .project-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 29px;
+            box-shadow: 0 5px 20px rgba(16,36,58,.035);
+            transition: transform .25s, box-shadow .25s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+        }
+
+        .project-top {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 17px;
+        }
+
+        .project-icon {
+            flex-shrink: 0;
+            width: 53px;
+            height: 53px;
+            border-radius: 15px;
+            display: grid;
+            place-items: center;
+            background: #e1f7f3;
+            color: var(--teal);
+            font-size: 1.4rem;
+        }
+
+        .project-card h3 {
+            font-size: 1.15rem;
+        }
+
+        .project-card p {
+            color: var(--muted);
+            font-size: 0.94rem;
+            margin-bottom: 18px;
+        }
+
+        .project-link {
+            color: var(--blue);
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .project-link:hover {
+            color: var(--teal);
+        }
+
+        .project-link i {
+            margin-left: 5px;
+        }
+
+        /* =========================
+           10. EDUCATION & FELLOWSHIPS
+        ========================== */
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .education-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .education-item {
+            background: var(--white);
+            padding: 20px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .education-item h3 {
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+
+        .education-item p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .education-item i {
+            color: var(--teal);
+            margin-right: 7px;
+        }
+
+        /* =========================
+           11. LANGUAGES
+        ========================== */
+
+        .language-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .language-tag {
+            padding: 11px 18px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            color: var(--navy);
+            font-weight: 600;
+            font-size: 0.92rem;
+        }
+
+        /* =========================
+           12. CONTACT
+        ========================== */
+
+        .contact-section {
+            background: var(--navy);
+            color: var(--white);
+        }
+
+        .contact-section h2,
+        .contact-section h3 {
+            color: var(--white);
+        }
+
+        .contact-section .section-heading p {
+            color: #c5d4e2;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 35px;
+        }
+
+        .contact-intro p {
+            color: #c5d4e2;
+            margin-bottom: 25px;
+        }
+
+        .contact-details {
+            display: grid;
+            gap: 16px;
+        }
+
+        .contact-detail {
+            display: flex;
+            gap: 13px;
+            align-items: flex-start;
+            color: #e1eaf3;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-detail i {
+            color: #67e1d1;
+            width: 22px;
+            margin-top: 5px;
+        }
+
+        .contact-detail a:hover {
+            color: #67e1d1;
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 11px 14px;
+            border: 1px solid rgba(255,255,255,.25);
+            border-radius: 9px;
+            color: var(--white);
+            font-size: 0.9rem;
+            transition: .2s;
+        }
+
+        .social-link:hover {
+            background: var(--teal);
+            border-color: var(--teal);
+        }
+
+        .contact-note {
+            background: rgba(255,255,255,.07);
+            border: 1px solid rgba(255,255,255,.12);
+            border-radius: var(--radius);
+            padding: 30px;
+        }
+
+        .contact-note h3 {
+            margin-bottom: 15px;
+        }
+
+        .contact-note p {
+            color: #c5d4e2;
+            margin-bottom: 22px;
+        }
+
+        /* =========================
+           13. FOOTER
+        ========================== */
+
+        footer {
+            background: #0a1929;
+            color: #b8c6d5;
+            padding: 25px 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 0.85rem;
+        }
+
+        .footer-inner strong {
+            color: var(--white);
+        }
+
+        .back-top {
+            color: #67e1d1;
+        }
+
+        /* =========================
+           14. RESPONSIVE DESIGN
+        ========================== */
+
+        @media (max-width: 900px) {
+            .nav-links {
+                gap: 13px;
+            }
+
+            .nav-links a {
+                font-size: 0.8rem;
+            }
+
+            .hero-grid {
+                gap: 35px;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 720px) {
+            .section {
+                padding: 65px 0;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 76px;
+                left: 0;
+                right: 0;
+                padding: 20px 5%;
+                background: var(--white);
+                border-bottom: 1px solid var(--border);
+                box-shadow: var(--shadow);
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li a {
+                display: block;
+                padding: 12px 5px;
+                font-size: 0.95rem;
+            }
+
+            .nav-contact {
+                text-align: center;
+                margin-top: 7px;
+            }
+
+            .hero {
+                padding: 65px 0 75px;
+            }
+
+            .hero-grid,
+            .about-grid,
+            .contact-grid,
+            .education-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-grid {
+                text-align: center;
+            }
+
+            .hero-description {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-actions {
+                justify-content: center;
+            }
+
+            .hero-photo-wrap {
+                max-width: 285px;
+                margin-top: 15px;
+            }
+
+            .photo-label {
+                left: -12px;
+            }
+
+            .strip-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .strip-item:nth-child(2) {
+                border-right: none;
+            }
+
+            .strip-item:nth-child(-n+2) {
+                border-bottom: 1px solid var(--border);
+            }
+
+            .mission-grid,
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-intro {
+                margin-bottom: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 92%;
+            }
+
+            .hero h1 {
+                font-size: 2.65rem;
+                letter-spacing: -1px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline {
+                padding-left: 22px;
+            }
+
+            .timeline-item::before {
+                left: -32px;
+            }
+
+            .timeline-item {
+                padding: 20px;
+            }
+
+            .mission-card,
+            .project-card,
+            .info-card,
+            .contact-note {
+                padding: 22px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        /* Accessibility: respect reduced-motion preferences */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.01ms !important;
+            }
+        }
+         
+/* ABOUT ME SECTION */
+#about {
+    background: #e8f5f5 !important;
+    padding: 90px 0;
+}
+
+/* Section heading */
+#about .section-heading h2 {
+    color: #10243a;
+}
+
+#about .section-heading p {
+    color: #43556b;
+}
+
+/* About Me paragraph text */
+#about .about-text p {
+    color: #344256;
+}
+
+/* Personal Details card */
+#about .info-card {
+    background: #ffffff;
+    border: 1px solid #c5e3e1;
+    border-left: 5px solid #11a89a;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(16, 36, 58, 0.08);
+}
+
+/* Card heading and details */
+#about .info-card h3,
+#about .info-list strong {
+    color: #10243a;
+}
+
+#about .info-list li {
+    color: #43556b;
+    border-bottom-color: #e1ecef;
+}
+
+/* Accent icon */
+#about .info-card h3 i {
+    color: #087f8c;
+}
+
+        p, .contact-section .contact-note p { color: #e0eaf5 !important; } /* CONTACT ICONS */ .contact-section .contact-detail i { color: #5eead4 !important; font-size: 1.15rem; } .contact-section .contact-detail strong { color: #ffffff !important; } .contact-section .contact-detail a { color: #ffffff !important; overflow-wrap: anywhere; text-decoration: underline; text-decoration-color: #5eead4; text-underline-offset: 4px; } .contact-section .contact-detail a:hover { color: #5eead4 !important; } /* SOCIAL MEDIA ICONS & LINKS */ .contact-section .social-link { color: #ffffff !important; background: #193b59; border: 1px solid #52708b; } .contact-section .social-link i { color: #5eead4 !important; } .contact-section .social-link:hover { background: #087f8c; border-color: #5eead4; color: #ffffff !important; } .contact-section .social-link:hover i { color: #ffffff !important; } /* ORGANIZATIONS & OPPORTUNITIES CARD */ .contact-section .contact-note { background: #193b59 !important; border: 1px solid #52708b; border-top: 4px solid #5eead4; border-radius: 18px; padding: 32px; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); } .contact-section .contact-note h3 { color: #ffffff !important; font-size: 1.4rem; margin-bottom: 18px; } .contact-section .contact-note p { color: #e0eaf5 !important; line-height: 1.9; } /* MAKE THE EMAIL BUTTON STAND OUT */ .contact-section .btn-primary { background: #5eead4 !important; color: #10243a !important; font-weight: 800; border: 1px solid #5eead4; } .contact-section .btn-primary i { color: #10243a !important; } .contact-section .btn-primary:hover { background: #ffffff !important; border-color: #ffffff; color: #10243a !important; } /* FOOTER */ footer { background: #071522 !important; color: #d5e2ef !important; border-top: 3px solid #11a89a; } footer p, footer strong { color: #e7eef7 !important; } footer .back-top { color: #5eead4 !important; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; } /* IMPROVE KEYBOARD ACCESSIBILITY */ a:focus-visible, button:focus-visible { outline: 3px solid #11a89a; outline-offset: 4px; } /* SMALL SCREEN ADJUSTMENTS */ @media (max-width: 480px) { .contact-section .contact-note { padding: 23px; } .contact-section .social-links { gap: 10px; } .contact-section .social-link { padding: 10px 12px; } } >
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="navbar">
+        <nav class="container nav-inner" aria-label="Main navigation">
+
+            <a class="logo" href="#home">
+                Balibuza<span>.</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinks"
+                type="button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a class="nav-contact" href="#contact">Contact Me</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO / HOME
+        ========================== -->
+
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <span class="eyebrow">
+                        Welcome to my portfolio
+                    </span>
+
+                    <h1>
+                        Hello, I'm<br>
+                        <span>Balibuza Jacob.</span>
+                    </h1>
+
+                    <h2>
+                        Changemaker | Social Entrepreneur |
+                        Graphic Designer
+                    </h2>
+
+                    <p class="hero-description">
+                        I am passionate about digital inclusion, community
+                        empowerment, climate resilience, and sustainable
+                        development. I combine creativity, technology, and
+                        community engagement to turn ideas into meaningful
+                        social impact.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            Explore My Work
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Contact Me
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <p class="hero-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Kakuma–Kalobeyei, Kenya
+                    </p>
+
+                </div>
+
+                <div class="hero-photo-wrap">
+
+                    <div class="hero-photo-frame">
+                        <!-- Save your uploaded photo as profile.jpg
+                             in the same folder as index.html. -->
+                        <img
+                            class="hero-photo"
+                            src="profile.jpg"
+                            alt="Portrait of Balibuza Jacob"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x750/eaf0f5/10243a?text=Balibuza+Jacob';">
+                    </div>
+
+                    <div class="photo-label">
+                        <strong>Balibuza Jacob</strong>
+                        <small>Designing for Change</small>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             QUICK PROFILE
+        ========================== -->
+
+        <section class="profile-strip" aria-label="Profile highlights">
+            <div class="container strip-grid">
+
+                <div class="strip-item">
+                    <i class="fa-solid fa-earth-africa"></i>
+                    <strong>Congolese</strong>
+                    <span>Nationality</span>
+                </div>
+
+                <div class="strip-item">
+                    <i class="fa-solid fa-people-group"></i>
+                    <strong>Community</strong>
+                    <span>Engagement & Outreach</span>
+                </div>
+
+                <div class="strip-item">
+                    <i class="fa-solid fa-leaf"></i>
+                    <strong>Climate Action</strong>
+                    <span>Resilience & SDGs</span>
+                </div>
+
+                <div class="strip-item">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <strong>Digital Inclusion</strong>
+                    <span>Technology & Skills</span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             ABOUT ME
+        ========================== -->
+
+        <section class="section" id="about">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">Get to know me</span>
+                    <h2>About <span class="accent">Me</span></h2>
+                    <p>
+                        My story, my interests, and the values that guide
+                        my professional journey.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+
+                        <p>
+                            I am <strong>Balibuza Jacob</strong>, a Congolese
+                            changemaker, social entrepreneur, graphic designer,
+                            and community outreach practitioner based in the
+                            Kakuma–Kalobeyei area of Kenya.
+                        </p>
+
+                        <p>
+                            My work brings together creative communication,
+                            digital technology, education, community engagement,
+                            and advocacy. I believe young people and underserved
+                            communities deserve access to the knowledge, tools,
+                            and opportunities needed to shape their futures.
+                        </p>
+
+                        <p>
+                            I contribute to initiatives focused on digital skills,
+                            youth empowerment, climate resilience, sustainable
+                            development, and inclusive innovation. I am especially
+                            interested in using design and technology to address
+                            practical challenges and amplify community voices.
+                        </p>
+
+                        <p>
+                            I continue to develop my skills through professional
+                            experience, education, fellowships, and collaborative
+                            projects that connect local action with global goals.
+                        </p>
+
+                    </div>
+
+                    <aside class="info-card">
+                        <h3>
+                            <i class="fa-regular fa-id-card accent"></i>
+                            Personal Details
+                        </h3>
+
+                        <ul class="info-list">
+                            <li>
+                                <strong>Full Name</strong>
+                                Balibuza Jacob
+                            </li>
+                            <li>
+                                <strong>Nationality</strong>
+                                Congolese
+                            </li>
+                            <li>
+                                <strong>Location</strong>
+                                Kakuma–Kalobeyei, Kenya
+                            </li>
+                            <li>
+                                <strong>Languages</strong>
+                                French, English, Kiswahili, Lingala, Kitembo
+                            </li>
+                            <li>
+                                <strong>Professional Focus</strong>
+                                Design, community engagement, technology,
+                                climate action
+                            </li>
+                        </ul>
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================
+             MISSION & VISION
+        ========================== -->
+
+        <section class="section" id="mission">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">Purpose & direction</span>
+                    <h2>My Mission & <span class="accent">Vision</span></h2>
+                    <p>
+                        The purpose behind my work and the future I want
+                        to help build.
+                    </p>
+                </div>
+
+                <div class="mission-grid">
+
+                    <article class="mission-card">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <h3>My Mission</h3>
+                        <p>
+                            To empower communities and young people through
+                            creativity, digital skills, inclusive innovation,
+                            community engagement, and climate-resilient action.
+                            I aim to help turn ideas into practical solutions
+                            that create meaningful social impact.
+                        </p>
+                    </article>
+
+                    <article class="mission-card">
+                        <i class="fa-solid fa-earth-africa"></i>
+                        <h3>My Vision</h3>
+                        <p>
+                            A world where young people and underserved communities
+                            have the knowledge, resources, opportunities, and
+                            voice to build inclusive, innovative, and sustainable
+                            futures.
+                        </p>
+                    </article>
+
+                </div>
+
+                <div class="motto">
+                    <i class="fa-solid fa-quote-left accent"></i>
+                    Designing for Change — using creativity, technology,
+                    and community action to build a better future.
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
+        <section class="section" id="skills">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">What I bring</span>
+                    <h2>My <span class="accent">Skills</span></h2>
+                    <p>
+                        A combination of creative, technical, communication,
+                        and community-focused capabilities.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <h3>Graphic Design</h3>
+                        <ul>
+                            <li>Visual communication</li>
+                            <li>Logos, flyers, and banners</li>
+                            <li>Social media graphics</li>
+                            <li>Canva and Figma</li>
+                            <li>Affinity Designer, Adobe tools, CapCut</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                        <h3>Community Engagement</h3>
+                        <ul>
+                            <li>Community outreach and mobilization</li>
+                            <li>Facilitation and listening groups</li>
+                            <li>Youth empowerment</li>
+                            <li>Community-centered communication</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-chart-column"></i>
+                        </div>
+                        <h3>Research & Data</h3>
+                        <ul>
+                            <li>Household and community surveys</li>
+                            <li>Structured questionnaires</li>
+                            <li>Data collection and entry</li>
+                            <li>Reporting and data quality</li>
+                            <li>Ethical data handling</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3>Digital Technology</h3>
+                        <ul>
+                            <li>ICT coaching</li>
+                            <li>Digital skills support</li>
+                            <li>Digital marketing</li>
+                            <li>Technology for social impact</li>
+                            <li>Ongoing computer science studies</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <h3>Climate & SDGs</h3>
+                        <ul>
+                            <li>Climate change advocacy</li>
+                            <li>Climate resilience</li>
+                            <li>Sustainable development</li>
+                            <li>Community awareness</li>
+                            <li>Youth-led action</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3>Communication & Leadership</h3>
+                        <ul>
+                            <li>Social media management</li>
+                            <li>Creative storytelling</li>
+                            <li>Community facilitation</li>
+                            <li>Social entrepreneurship</li>
+                            <li>Collaborative problem-solving</li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================
+             PROFESSIONAL EXPERIENCE
+        ========================== -->
+
+        <section class="section" id="experience">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">My professional journey</span>
+                    <h2>Experience & <span class="accent">Contributions</span></h2>
+                    <p>
+                        Roles and practical experience contributing to
+                        community development, digital inclusion, and research.
+                    </p>
+                </div>
+
+                <div class="timeline">
+
+                    <article class="timeline-item">
+                        <h3>ICT Coach</h3>
+                        <div class="timeline-org">Duka Manager</div>
+                        <p>
+                            Support digital literacy and help small-business
+                            users understand digital tools for managing sales,
+                            inventory, customer credit, expenses, and reports.
+                        </p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>Communication Officer</h3>
+                        <div class="timeline-org">Nguvu-Teach</div>
+                        <p>
+                            Contribute to communication and youth-focused
+                            initiatives advancing digital skills, technology,
+                            software engineering learning, and access to
+                            opportunities.
+                        </p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>Listening Group Facilitator & Enumerator</h3>
+                        <div class="timeline-org">FilmAid Kenya</div>
+                        <p>
+                            Facilitated listening groups, supported community
+                            mobilization, collected and entered data, and
+                            contributed to reporting and monitoring activities.
+                        </p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>Data Collection Enumerator</h3>
+                        <div class="timeline-org">Usawa Agenda</div>
+                        <p>
+                            Conducted household and community surveys using
+                            structured questionnaires, maintaining accuracy,
+                            confidentiality, and ethical data collection practices.
+                        </p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>Community Mobilization & Engagement</h3>
+                        <div class="timeline-org">
+                            Advocacy Initiative for Youth Development /
+                            Legal Civil Document; Youths Talent Innovation
+                        </div>
+                        <p>
+                            Contributed to community outreach, youth engagement,
+                            facilitation, and related administrative support.
+                        </p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>Social Media Manager</h3>
+                        <div class="timeline-org">Yoma World & Unitok Kenya</div>
+                        <p>
+                            Supported social media management and digital
+                            communication activities.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
+        <section class="section" id="projects">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">Ideas into action</span>
+                    <h2>Projects & <span class="accent">Initiatives</span></h2>
+                    <p>
+                        Initiatives that connect design, technology,
+                        education, entrepreneurship, and community impact.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <div class="project-top">
+                            <div class="project-icon">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <h3>Open Circle Initiative</h3>
+                        </div>
+                        <p>
+                            A creative advocacy platform using inclusive design
+                            and storytelling to amplify community voices and
+                            promote climate resilience, SDGs, education,
+                            peacebuilding, and youth empowerment.
+                        </p>
+                        <a class="project-link"
+                           href="https://www.facebook.com/"
+                           target="_blank" rel="noopener noreferrer">
+                            Explore initiative <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-top">
+                            <div class="project-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h3>Nguvu-Teach</h3>
+                        </div>
+                        <p>
+                            A youth-focused initiative supporting digital skills,
+                            technology, software engineering learning, web
+                            development, and access to new opportunities.
+                        </p>
+                        <a class="project-link"
+                           href="https://nguvu-teach.org"
+                           target="_blank" rel="noopener noreferrer">
+                            Visit website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-top">
+                            <div class="project-icon">
+                                <i class="fa-solid fa-store"></i>
+                            </div>
+                            <h3>Duka Manager</h3>
+                        </div>
+                        <p>
+                            An offline-capable, multilingual business-management
+                            app designed to help small shops track sales,
+                            inventory, customer credit, expenses, and reports.
+                        </p>
+                        <a class="project-link"
+                           href="https://duka-manager.com"
+                           target="_blank" rel="noopener noreferrer">
+                            Visit website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-top">
+                            <div class="project-icon">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+                            <h3>Balibuza Graphics</h3>
+                        </div>
+                        <p>
+                            A creative design practice offering visual
+                            communication such as logos, flyers, banners,
+                            business cards, CVs, certificates, and social
+                            media graphics.
+                        </p>
+                        <a class="project-link" href="#contact">
+                            Discuss a design project <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-top">
+                            <div class="project-icon">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <h3>Student Room Booking App</h3>
+                        </div>
+                        <p>
+                            A study project concept for managing study-space
+                            availability, student bookings, cancellations,
+                            confirmations, and staff administration.
+                        </p>
+                        <a class="project-link" href="#contact">
+                            Ask about this project <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================
+             EDUCATION
+        ========================== -->
+
+        <section class="section" id="education">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">Learning & growth</span>
+                    <h2>Education & <span class="accent">Fellowships</span></h2>
+                    <p>
+                        My academic background and continued professional
+                        learning.
+                    </p>
+                </div>
+
+                <div class="education-grid">
+
+                    <div>
+                        <h3 style="margin-bottom:20px;">Education</h3>
+
+                        <div class="education-list">
+
+                            <article class="education-item">
+                                <h3>
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    Diploma in Business Administration
+                                </h3>
+                                <p>IUM</p>
+                            </article>
+
+                            <article class="education-item">
+                                <h3>
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    Global Secondary Diploma
+                                </h3>
+                                <p>Amala Global Secondary Diploma</p>
+                            </article>
+
+                            <article class="education-item">
+                                <h3>
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    Diplôme d’État
+                                </h3>
+                                <p>Democratic Republic of the Congo</p>
+                            </article>
+
+                            <article class="education-item">
+                                <h3>
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                    Computer Science Studies
+                                </h3>
+                                <p>University of the People</p>
+                            </article>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="margin-bottom:20px;">Fellowships & Training</h3>
+
+                        <div class="education-list">
+
+                            <article class="education-item">
+                                <h3>
+                                    <i class="fa-solid fa-leaf"></i>
+                                    East Africa Resilience Fellowship
+                                </h3>
+                                <p>Climate resilience and community leadership.</p>
+                            </article>
+
+                            <article class="education-item">
+                                <h3>
+                                    <i class="fa-solid fa-earth-africa"></i>
+                                    UNSSC Climate Action Learning
+                                </h3>
+                                <p>Systems Change and Behavioural Science for Climate Action.</p>
+                            </article>
+
+                            <article class="education-item">
+                                <h3>
+                                    <i class="fa-solid fa-users"></i>
+                                    FXB Climate Advocates
+                                </h3>
+                                <p>Fall 2026 cohort.</p>
+                            </article>
+
+                            <article class="education-item">
+                                <h3>
+                                    <i class="fa-solid fa-lightbulb"></i>
+                                    Additional Learning
+                                </h3>
+                                <p>
+                                    GIZ entrepreneurship and digital marketing,
+                                    Aspire Leaders, Catalyst Academy selection
+                                    (2026), and QS ImpACT climate education activities.
+                                </p>
+                            </article>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             LANGUAGES
+        ========================== -->
+
+        <section class="section" id="languages">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">Communication</span>
+                    <h2>Languages I <span class="accent">Speak</span></h2>
+                    <p>
+                        I value multilingual communication and working
+                        across different communities.
+                    </p>
+                </div>
+
+                <div class="language-list">
+                    <span class="language-tag">French</span>
+                    <span class="language-tag">English</span>
+                    <span class="language-tag">Kiswahili</span>
+                    <span class="language-tag">Lingala</span>
+                    <span class="language-tag">Kitembo</span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             CONTACT ME
+        ========================== -->
+
+        <section class="section contact-section" id="contact">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">Let's connect</span>
+                    <h2>Contact <span class="accent">Me</span></h2>
+                    <p>
+                        Open to opportunities, collaborations, fellowships,
+                        creative projects, and initiatives that create
+                        positive community impact.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <div class="contact-intro">
+
+                        <h3 style="margin-bottom:18px;">
+                            Let's create meaningful change.
+                        </h3>
+
+                        <p>
+                            If you are recruiting, organizing a fellowship,
+                            developing a community initiative, or looking for
+                            a creative collaborator, I would be glad to connect.
+                        </p>
+
+                        <div class="contact-details">
+
+                            <div class="contact-detail">
+                                <i class="fa-regular fa-envelope"></i>
+                                <div>
+                                    <strong>Email</strong><br>
+                                    <a href="mailto:yakobobalibuzajacques@gmail.com">
+                                        yakobobalibuzajacques@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <strong>Phone</strong><br>
+                                    <a href="tel:+254704230158">
+                                        +254 704 230 158
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <strong>Location</strong><br>
+                                    Kakuma–Kalobeyei, Kenya
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="social-links">
+
+                            <!-- Replace # with your actual profile URLs -->
+
+                            <a class="social-link"
+                               href="https://www.linkedin.com/"
+                               target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-linkedin"></i>
+                                LinkedIn
+                            </a>
+
+                            <a class="social-link"
+                               href="https://www.facebook.com/"
+                               target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-facebook"></i>
+                                Facebook
+                            </a>
+
+                            <a class="social-link"
+                               href="https://www.instagram.com/"
+                               target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-instagram"></i>
+                                Instagram
+                            </a>
+
+                            <a class="social-link"
+                               href="https://x.com/"
+                               target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-x-twitter"></i>
+                                X
+                            </a>
+
+                            <a class="social-link"
+                               href="https://github.com/"
+                               target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="contact-note">
+
+                        <h3>My professional interests</h3>
+
+                        <p>
+                            I welcome connections related to climate action,
+                            humanitarian work, research and data collection,
+                            digital education, graphic design, youth empowerment,
+                            social entrepreneurship, and sustainable development.
+                        </p>
+
+                        <a class="btn btn-primary"
+                           href="mailto:yakobobalibuzajacques@gmail.com?subject=Professional%20Opportunity">
+                            <i class="fa-regular fa-paper-plane"></i>
+                            Email Me About an Opportunity
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+        <div class="container footer-inner">
+
+            <p>
+                © <span id="currentYear"></span>
+                <strong>Balibuza Jacob.</strong>
+                All rights reserved.
+            </p>
+
+            <p>Designed with purpose. Built for impact.</p>
+
+            <a class="back-top" href="#home">
+                Back to top ↑
+            </a>
+
+        </div>
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+        // Automatically update the copyright year.
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+
+        // Toggle the mobile navigation menu.
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", function () {
+            const isOpen = navLinks.classList.toggle("active");
+
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen ? "Close navigation menu" : "Open navigation menu"
+            );
+
+            menuToggle.innerHTML = isOpen
+                ? '<i class="fa-solid fa-xmark"></i>'
+                : '<i class="fa-solid fa-bars"></i>';
+        });
+
+        // Close the mobile menu after selecting a section.
+        document.querySelectorAll("#navLinks a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("active");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.setAttribute("aria-label", "Open navigation menu");
+                menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            });
+        });
+    </script>
+
+</body>
+</html>
